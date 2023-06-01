@@ -58,6 +58,7 @@ i {
   padding: 20px;
 }
 .join-form {
+  order: 0;
   flex: 1;
   padding: 20px;
 
@@ -72,8 +73,9 @@ i {
   width: 100%;
 
 }
-.btn {
-    display: block;
+button{
+    display: inline;
+    border: none;
     background: var(--Tomato);
     padding: 10px ;
     color: white;
@@ -83,7 +85,7 @@ i {
     cursor: pointer;
     transition: all .3s ease-in-out;
 }
-.btn:hover{
+button:hover{
   background: var(--Charcoal-Grey);
 }
 
@@ -97,8 +99,23 @@ form input {
   width: 100%;
   margin: 20px 0;
 }
-.success-active {
+.success-box {
   background: var(--White);
   padding: 20px;
   border-radius: 20px;
+
+}
+
+.error {
+  display: none;
+  color: var(--Tomato);
+}
+
+.invalid .error {
+  display: inline;
+}
+
+.invalid > input {
+  background: var(--Tomato);
+  border: none;
 }

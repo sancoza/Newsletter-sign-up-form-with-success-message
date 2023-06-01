@@ -18,9 +18,9 @@
     </title>
   </head>
   <body>
-    <div class="card-container">
-      <div class="card">
-        <div class="join-form">
+    <div class="card-container container desktop-container show" id="container">
+      <div class="card ">
+        <div class="join-form subscribe-panel">
           <h1>Stay Updated!</h1>
           <p>
             Join 60.000 + product lorem, dolor <br />
@@ -31,18 +31,24 @@
             <li><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum, dolor sit amet consectetur </li>
             <li><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem, ipsum dolor</li>
           </ul>
-          <form>
-            <label for="email">Email address</label>
-            <br>
-            <input type="email" placeholder="email@company.com" />
+          <form class="subscribe-form" novalidate="" autocomplete="off">
+            <div class="form-control">
+              <div class="info-panel">
+                <label for="email">Email address</label>
+                <span aria-live="polite" class="error">Valid email required</span>
+              </div>
+              <input name="email" id="email" placeholder="email@company.com" type="email">
+            </div>
+            <button class="btn" type="submit">Subscribe to monthly newsletter</button>
           </form>
+          
 
-          <a href="#" class="btn">Subscribe to monthly newsletter</a>
+          
         </div>
         <div class="logo-img">
           <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
         </div>
       </div>
-    </div>
+<script src="./main.js"></script>
   </body>
 </html>
