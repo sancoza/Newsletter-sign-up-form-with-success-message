@@ -6,6 +6,11 @@
   --Grey: hsl(231, 7%, 60%);
   --White: hsl(0, 0%, 100%);
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: "Roboto", sans-serif;
   background: var(--Dark-Slate-Grey);
@@ -13,39 +18,55 @@ body {
 }
 p {
   font-size: 16px;
+  padding: 20px 0;
+}
+h1 {
+  font-size: 2rem;
 }
 a {
     text-decoration: none;
 }
+ul {
+  padding: 20px 0;
+}
 ul li {
     list-style: none;
+    font-size: 0.8rem;
+    padding: 2px 0;
+}
+ul i {
+  margin-right: 10px;
+  color: var(--Tomato);
 }
 .card-container {
-  height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .card {
-  width: 50rem;
-  height: 70vh;
   background: var(--White);
   border-radius: 2rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
   padding: 20px;
 }
 .join-form {
   flex: 1;
+  padding: 20px;
+align-self: flex-start;
+ text-align: start;
 }
 .logo-img {
   flex: 1;
+ 
+  
 }
 .logo-img img {
   width: 100%;
-  
-  height:70vh;
+
 }
 .btn {
     display: block;
@@ -55,4 +76,18 @@ ul li {
     text-align: center;
     margin-top: 20px;
     border-radius: 7px;
+}
+.btn:hover{
+  background: var(--Charcoal-Grey);
+}
+
+form label {
+  font-weight: 700;
+  
+}
+
+form input {
+  padding: 15px;
+  width: 100%;
+  margin: 20px 0;
 }
