@@ -14,11 +14,11 @@
 body {
   font-family: "Roboto", sans-serif;
   background: var(--Dark-Slate-Grey);
-  color: var(--Charcoal-Grey);
+  color: var(--Dark-Slate-Grey);
 }
 p {
   font-size: 16px;
-  padding: 20px 0;
+  padding: 10px 0;
 }
 h1 {
   font-size: 2rem;
@@ -49,14 +49,14 @@ ul i {
   border-radius: 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 auto;
   padding: 20px;
 }
 .join-form {
   flex: 1;
   padding: 20px;
-align-self: flex-start;
+
  text-align: start;
 }
 .logo-img {
@@ -87,7 +87,10 @@ form label {
 }
 
 form input {
-  padding: 15px;
+  padding: 10px;
   width: 100%;
   margin: 20px 0;
+}
+.success-active {
+  background: var(--White);
 }
