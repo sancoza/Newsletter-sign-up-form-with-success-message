@@ -119,3 +119,22 @@ form input {
   background: var(--Tomato);
   border: none;
 }
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width:768px) {
+  .desktop {
+    display: none;
+  }
+  .hide {
+    display: block;
+  }
+  .card {
+    display: flexbox;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    
+  }
+}
